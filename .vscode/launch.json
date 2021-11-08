@@ -1,0 +1,26 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Test main run",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/main.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--players","[(5, 1)]",
+                "--nvalidators=4",
+                "--nproposers=1",
+                "--nconnections=2",
+                "--nrounds=3",
+                "--nheartbeatsinround=5",
+                "--ptransactions=0.1",
+                "--meanproptime=0.1",
+                "--seed=42"
+            ]
+        }
+    ]
+}
